@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8"/>
+    <title>APPTITLE</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/ripples.min.css" rel="stylesheet">
+    <link href="/css/material-wfont.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/app.css"/>
+
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/jquery.cookie.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+
+<body>
+	<div class="navbar" style="background-color:#555;">		
+	    <div class="navbar-header">
+	        <a class="navbar-brand" href="/">APPTITLE</a>
+	    </div>	        
+	</div>
+	
+	<div class="container-fluid">
+		<%=yield %>      
+	</div>
+	
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="/js/ripples.min.js"></script>
+    <script src="/js/material.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.material.init();
+        });
+    </script>
+
+</body>
+
+</html>
