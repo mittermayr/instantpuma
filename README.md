@@ -5,4 +5,4 @@ A Ruby + Puma + Sinatra + ERB based minimal skeleton template I use to start pro
 
 # Prerequisites
 
-Install Puma, Rerun and Bundler.
+Install Nginx, Rerun and Bundler. Then execute 'bundle install' to install Puma, Sinatra and a few other things.
