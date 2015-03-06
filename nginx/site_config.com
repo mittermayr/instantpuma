@@ -1,5 +1,5 @@
 upstream my_project {
-  server unix:////home/deploy/myproject.com/runtime/puma.pumatra.sock;
+  server unix:////tmp/puma.exampleapp.pumatra.sock;
 }
 
 server {

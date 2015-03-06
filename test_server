@@ -1,1 +1,1 @@
-rerun --dir endpoints,views 'puma -C puma.rb'
+rerun --dir endpoints,views,database 'puma -C puma.rb'

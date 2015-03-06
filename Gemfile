@@ -1,3 +1,5 @@
 source 'https://rubygems.org'
 gem 'puma'
 gem 'sinatra'
+gem 'connection_pool'
+gem 'mysql2'

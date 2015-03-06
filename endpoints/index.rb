@@ -11,6 +11,9 @@ class Pumatra < Sinatra::Base
 	
 	get "/" do
 		#erb :welcome, :layout => false
+		
+		@username = Database::Users.get_by_id(1)
+		
 		erb :welcome
 	end
   

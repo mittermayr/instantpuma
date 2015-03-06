@@ -1,7 +1,16 @@
 require 'sinatra'
+require 'mysql2'
+require 'connection_pool'
+
+require_relative 'database'
 
 class Pumatra < Sinatra::Base
 
+	$database = ConnectionPool.new(size: 5, timeout: 15) {
+	  Mysql2::Client.new(:host => "", :database => "", :username => "", :password => "", :reconnect => true)
+	}
+
+	
 end
 
 require_relative 'endpoints/index.rb'
