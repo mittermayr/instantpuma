@@ -7,9 +7,8 @@ require_relative 'database'
 class Pumatra < Sinatra::Base
 
 	$database = ConnectionPool.new(size: 5, timeout: 15) {
-	  Mysql2::Client.new(:host => "", :database => "", :username => "", :password => "", :reconnect => true)
+	  Mysql2::Client.new(:host => "127.0.0.1", :database => "", :username => "", :password => "", :reconnect => true)
 	}
-
 	
 end
 

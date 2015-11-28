@@ -1,4 +1,4 @@
-appname = "exampleapp"
+appname = "PROJECTNAME"
 root = "#{Dir.getwd}"
 rackup "#{root}/config.ru"
 pidfile "#{root}/runtime/puma.pid"
